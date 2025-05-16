@@ -2,9 +2,9 @@
 
 This project presents an interactive installation that captures bioelectrical signals from a plant and transforms them into real-time generative sound. It integrates a hardware acquisition system, adaptive firmware, a machine learning classification model, and a sound synthesis system built in Max/MSP.
 
-![Plant Setup](assets/plant.jpeg)
+<img src="assets/plant.jpeg" alt="Plant Setup" width="400"/>
 
-![Hardware Interface](assets/interface.jpeg)
+<img src="assets/interface.jpeg" alt="Hardware Interface" width="400"/>
 
 ## Installation
 
