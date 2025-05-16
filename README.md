@@ -1,58 +1,35 @@
-# (Titlul)
-(Scurtă descriere)
+# Bioelectrical Interface for Real-Time Generative Sound Synthesis
 
-## (Instalare)
-...
+This project presents an interactive installation that captures bioelectrical signals from a plant and transforms them into real-time generative sound. It integrates a hardware acquisition system, adaptive firmware, a machine learning classification model, and a sound synthesis system built in Max/MSP.
 
-## (Utilizare)
-...
+![Plant Setup](assets/plant.jpeg)
 
-## (Istoric)
+![Hardware Interface](assets/interface.jpeg)
 
-(13.05) ...
+## Installation
 
-(3.06) ...
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Zighhi/Interactive-Plant-Installation
+   ```
+3. Required libraries:
+   - `pyserial` (for serial communication)
+   - `python-osc` (for OSC messaging)
+   - `pymaxmusic` (for running the machine learning classifier inside the Max patch)
 
-(X.06) ...
+4. In Max/MSP, install [Pymax](https://www.danielbrownmusic.com/pymaxmusic/installation/) to run the integrated ML classifier.
 
-## (Link-uri)
-...
+## Usage
 
-# Dezvoltarea proiectului
+1. Connect the plant electrodes to the analog front end.
+2. Upload the firmware to the RP2040.
+3. Start the `classifier.py` script using Pymax for real-time classification.
+4. Open the Max/MSP patch `plant_synthesis.maxpat`.
+5. Interact with the plant – the system generates dynamic sound responses based on the detected interaction.
+6. Aditionally route the audio from Max to Ableton for mixing using something like VB-Cable (Optional)
 
-Pentru început:
+## Links
 
-1. Creează-ți cont pe Github
-2. Download și install [Github Desktop](https://desktop.github.com/)
-3. Citește [acest ghid](https://charlesmartin.com.au/blog/2020/08/09/student-project-repository) și ține la îndemână [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet).
-
-Apoi, procesul este următorul (inspirat de [aici](https://cs.anu.edu.au/courses/comp1720/deliverables/05-major-project/#submission-process)):
-
-1. *fork* al acestui template către propriul tău cont de Github
-
-![](assets/fork.gif)
-
-_(dacă preferi cumva ca repo-ul să nu fie vizibil de către public, îl poți seta ca Private din Settings - "Change visibility". Atunci trebuie să mă adaugi drept colaborator, ca eu să am acces.)_
-
-2. *clone* al repo-ului din Github Desktop pentru a-l downloada local
-
-![](assets/clone.gif)
-
-3. *commit* și *push* pe măsură ce lucrezi la proiect. Ultima versiune push-ată pe server înainte de deadline va conta pentru evaluare.
-
-![](assets/commit.gif)
-
-## Elemente obligatorii
-
-1. Acest readme completat. Titlu, descriere, mod de utilizare, istoric, link-uri utile.
-
-   Poți include și imagini și chiar [gif-uri animate](https://www.screentogif.com/), sau link-uri către materiale audio/video.
-   
-   Vezi [aici](https://charlesmartin.com.au/blog/2020/08/09/student-project-repository) mai multe sugestii.
-
-2. [Declarația de originalitate](statement-of-originality.yml) completată. Tot ce nu este inclus acolo va fi considerat 100% contribuție proprie.
-
-    *(formatul este adaptat de [aici](https://gitlab.cecs.anu.edu.au/comp1720/2018/comp1720-2018-major-project/-/blob/master/statement-of-originality.yml). Da, este un pic ironic să refolosim un doc [de altundeva](https://cs.anu.edu.au/courses/comp1720/resources/faq/#how-do-i-fill-out-my-statement-of-originality), dar menționăm sursa deci nu este plagiat!)*
-
-3. Proiectul în sine. Tot codul trebuie să fie prezent, proiectul trebuie să poată rula conform instrucțiunilor din readme. Dacă e nevoie de asset-uri mari (sunete, video etc), [folosește Git LFS](https://git-lfs.github.com/) sau include link de download în instrucțiunile de instalare.
+- [Demo of Installation](https://www.youtube.com/shorts/a0tIL53fTJs)  
+- [SCSS 2025 Article](Documentation/SCSS%20Interfață%20bioelectrică%20pentru%20sinteză%20sonoră%20generativă%20în%20timp%20real%20-%20Zglimbea%20Andrei%20-%202025.pdf)  
 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="pygen" module="max" category="pymaxmusic">
+
+	<digest>
+		Send messages to Python generators
+	</digest>
+	
+	<description>
+    Send messages to Python generators in order to play back the events yielded by those generators over time. A part of the Pymax package.
+  </description>
+	
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Daniel Brown</metadata>
+    <metadata name="tag">Pymax</metadata>
+    <metadata name="tag">Python</metadata>
+	</metadatalist>
+	
+
+	
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="time-increment-type" optional="0" type="symbol">
+			<digest>Must be "beats" or "ms"</digest>
+      <description>Must be "beats" or "ms." "beats" lets you control the tempo. "ms" is for fixed-time events.</description>
+    </objarg>
+    <objarg name="generator-name" optional="0" type="symbol">
+      <digest>Name of Python generator added to Pymax</digest>
+    </objarg>
+  </objarglist>
+	
+	<!--MESSAGES-->
+	<methodlist>
+    <method name="int">
+      <digest>
+        Left inlet: start/stop. Right inlet: tempo
+      </digest>      
+      <description>
+        In left inlet: 0 stops the generator, and anything else starts it.
+        In right inlet: if in beats mode, sets the tempo.
+      </description>
+    </method>
+
+    <method name="float">
+      <digest>
+        Right inlet: set the tempo if in beats mode
+      </digest> 
+      <description>
+        In right inlet: if in beats mode, sets the tempo.
+      </description>
+    </method>
+
+    <method name="reset">
+			<digest>
+				In middle inlet: resets the generator to its original state.
+			</digest>
+			<description>
+        In middle inlet: resets the generator to its original state.
+      </description>
+		</method>
+  </methodlist>
+
+  <!--OUTLETS-->
+  <misc name="Outlet">
+      <description>
+        All the elements of the list yielded by the Python generator function this calls, except the first element of the list.
+        This element, the one that's removed, is the ontime: this object will output when this ontime is hit.
+      </description>
+  </misc>  
+  
+  
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="pyobj"/>
+		<seealso name="pynote"/>
+  </seealsolist>
+	
+</c74object>

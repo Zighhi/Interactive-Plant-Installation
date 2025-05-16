@@ -1,0 +1,25 @@
+{
+  "author": "Daniel Brown",
+  "description": "Max patchers to use with the pymax.py Python module for Python-Max communication, especially music composition.",
+  "homepatcher": "examples/pymax_metronome.maxpat",
+  "max_version_min": "8",
+  "max_version_max": "none",
+  "name": "pymax",
+  "os": {
+    "macintosh": {
+      "platform": [ "ia32", "x64" ],
+      "min_version": "none"
+    },
+    "windows": {
+      "platform": [ "ia32", "x64" ],
+      "min_version": "none"
+    }
+  },
+  "package_extra": {
+    "reverse_domain": "com.danielbrownmusic",
+    "copyright": "Copyright (c) 2016 Cycling '74"
+  },
+  "tags": ["pymax", "Python"],
+  "version": "1.0.0",
+  "website": "http://www.danielbrownmusic.com"
+}
