@@ -1,13 +1,11 @@
 # Bioelectrical Interface for Real-Time Generative Sound Synthesis
 
 This project presents an interactive installation that captures bioelectrical signals from a plant and transforms them into real-time generative sound. It integrates a hardware acquisition system, adaptive firmware, a machine learning classification model, and a sound synthesis system built in Max/MSP.
-<p align="left">
-   <img src="assets/plant.jpeg" alt="Plant Setup" width="400"/>
-</p>
-   <!-- image resize and alignment-->
-<p align="right">
-   <img src="assets/interface.jpeg" alt="Hardware Interface" width="400"/>
-</p>
+
+<img src="assets/plant.jpeg" alt="Plant Setup" width="600"/>
+<!-- image resize -->
+<img src="assets/interface.jpeg" alt="Hardware Interface" width="600"/>
+
 ## Installation
 
 1. Clone the repository:
@@ -29,6 +27,8 @@ This project presents an interactive installation that captures bioelectrical si
 4. Open the Max/MSP patch `plant_synthesis.maxpat`.
 5. Interact with the plant – the system generates dynamic sound responses based on the detected interaction.
 6. Aditionally route the audio from Max to Ableton for mixing using something like VB-Cable (Optional)
+
+   It is also possible to emulate the plant by running the emulate_plant.py script, but first the path to the recordings must be modified locally: /Firmware/Recs.
 
 ## Links
 
