@@ -1,11 +1,13 @@
 # Bioelectrical Interface for Real-Time Generative Sound Synthesis
 
 This project presents an interactive installation that captures bioelectrical signals from a plant and transforms them into real-time generative sound. It integrates a hardware acquisition system, adaptive firmware, a machine learning classification model, and a sound synthesis system built in Max/MSP.
-
-<img src="assets/plant.jpeg" alt="Plant Setup" width="400"/>
-
-<img src="assets/interface.jpeg" alt="Hardware Interface" width="400"/>
-
+<p align="left">
+   <img src="assets/plant.jpeg" alt="Plant Setup" width="400"/>
+</p>
+   <!-- image resize and alignment-->
+<p align="right">
+   <img src="assets/interface.jpeg" alt="Hardware Interface" width="400"/>
+</p>
 ## Installation
 
 1. Clone the repository:
