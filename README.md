@@ -13,7 +13,7 @@ This project presents an interactive installation that captures bioelectrical si
    git clone https://github.com/Zighhi/Interactive-Plant-Installation
    ```
 3. Required libraries:
-   - `pyserial` (for serial communication)
+   - (`pyserial`)[https://pypi.org/project/pyserial/] (for serial communication)
    - `python-osc` (for OSC messaging)
    - `pymaxmusic` (for running the machine learning classifier inside the Max patch)
 
@@ -26,9 +26,10 @@ This project presents an interactive installation that captures bioelectrical si
 3. Start the `classifier.py` script using Pymax for real-time classification.
 4. Open the Max/MSP patch `plant_synthesis.maxpat`.
 5. Interact with the plant – the system generates dynamic sound responses based on the detected interaction.
-6. Aditionally route the audio from Max to Ableton for mixing using something like VB-Cable (Optional)
+6. Aditionally route the audio from Max to Ableton for mixing and additionall effects using something like [VB-Cable](https://vb-audio.com/Cable/) (Optional)
+  -   For using the Ableton project available in the repository it is required to have installed the [Soundtoys 5 VST's](https://www.soundtoys.com/product/soundtoys-5/)
 
-   It is also possible to emulate the plant by running the emulate_plant.py script, but first the path to the recordings must be modified locally: /Firmware/Recs.
+It is also possible to emulate the plant by running the emulate_plant.py script, but first the path to the recordings must be modified locally: /Firmware/Recs.
 
 ## Links
 
