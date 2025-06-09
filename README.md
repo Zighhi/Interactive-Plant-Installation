@@ -13,7 +13,7 @@ This project presents an interactive installation that captures bioelectrical si
    git clone https://github.com/Zighhi/Interactive-Plant-Installation
    ```
 3. Required libraries:
-   - (`pyserial`)[https://pypi.org/project/pyserial/] (for serial communication)
+   - `pyserial` (for serial communication): (https://pypi.org/project/pyserial/)
    - `python-osc` (for OSC messaging)
    - `pymaxmusic` (for running the machine learning classifier inside the Max patch)
 
